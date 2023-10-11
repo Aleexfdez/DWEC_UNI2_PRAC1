@@ -12,5 +12,5 @@ function separarPalabras(cadena) {
 
     var unirCadena = invertirCadena.join(""); // Une nuevamente en cadena las subcadenas
 
-    return console.log(unirCadena);
+    return console.log(cadena + " -> Pasa A -> " + unirCadena);;
 }
