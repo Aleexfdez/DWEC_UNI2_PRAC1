@@ -9,7 +9,7 @@ function separarPalabras(cadena) {
 function girarPalabras(cadena) {
 
     cadenaResultado = " ";
-    for (let i = 0; i < cadena.length; i++) {
+    for (var i = 0; i < cadena.length; i++) {
        cadenaSeparada = cadena[i].split("");
         cadenaGirada = cadenaSeparada.reverse();
         cadenaInvertida = cadenaGirada.join("");
