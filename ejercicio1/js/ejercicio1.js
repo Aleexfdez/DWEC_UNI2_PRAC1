@@ -1,16 +1,20 @@
-
-
 var cadena = prompt("Introduce palabra o frase");
-separarPalabras(cadena);
-
 
 function separarPalabras(cadena) {
-
-    var separarCadena = cadena.split(""); // Separa en subcadenas
-
-    var invertirCadena = separarCadena.reverse(); // Da la vuelta a la subcadema
-
-    var unirCadena = invertirCadena.join(""); // Une nuevamente en cadena las subcadenas
-
-    return console.log(cadena + " -> Pasa A -> " + unirCadena);;
+    
+    var cadenaSeparada = cadena.split(" ");
+    return cadenaSeparada
 }
+
+function girarPalabras(cadena) {
+
+    cadenaResultado = " ";
+    for (let i = 0; i < cadena.length; i++) {
+       cadenaSeparada = cadena[i].split("");
+        cadenaGirada = cadenaSeparada.reverse();
+        cadenaInvertida = cadenaGirada.join("");
+        cadenaResultado += cadenaInvertida  + " "; 
+    }
+    return cadenaResultado;
+}
+console.log(girarPalabras(separarPalabras(cadena)));
